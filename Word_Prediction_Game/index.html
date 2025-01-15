@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse Text Game</title>
+    <title>Word Prediction Game</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <div class="container">
-        <h1>Word Prediction game</h1>
-        <p id="level-text">Level: <span id="level">1</span></p>
-        <p id="challenge-text">Write this text in reverse:</p>
-        <input type="text" id="challenge" readonly>
-        <input type="text" id="user-input" placeholder="Type the reversed text here">
-        <p>Time left: <span id="timer">45</span> seconds</p>
+        <h1>Word Prediction Game</h1>
+        <!-- <p id="level-text">Level: <span id="level">1</span></p>
+        <p id="challenge-text">Write this text in reverse:</p> -->
+        <!-- <input type="text" id="challenge" readonly> -->
+         <div class = "magic_box">
+        <img src="drawing.png" alt="magic box" id = "b">
+        <img src="B.png" class ="hidden" alt="magic box" id = "B">
+        <img src="drawing.png" alt="magic box" id = "l">
+        <img src="L.png" class ="hidden" alt="magic box" id = "L">
+        <img src="drawing.png" alt="magic box" id = "a">
+        <img src="A.png" class ="hidden" alt="magic box" id = "A">
+        <img src="drawing.png" alt="magic box" id = "s">
+        <img src="S.png" class ="hidden" alt="magic box" id = "S">
+        <img src="drawing.png" alt="magic box" id = "t">
+        <img src="T.png" class ="hidden" alt="magic box" id = "T">
+        </div>
+        <div class="input-container">
+            <label for="user-input">Prediction:</label>
+            <input type="text" id="user-input">
+        </div>
         <button id="submit-btn">Submit</button>
         <p id="message"></p>
-        <button id="restart-btn" class="hidden">Restart</button>
+        <button id="restart-btn" class="hidden">Reset The Game</button>
     </div>
     <script src="script.js"></script>
 
