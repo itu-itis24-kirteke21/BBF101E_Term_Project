@@ -1,0 +1,70 @@
+/* General reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 250px;
+    border-radius: 100%;
+    border: 2px solid #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #e0e0e0;
+}
+
+p {
+    text-align: justify;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+.nav-button {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #333;
+    color: #e0e0e0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #555;
+    color: #ffffff;
+    transform: scale(1.05);
+}
