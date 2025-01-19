@@ -10,9 +10,6 @@
 <body>
     <div class="container">
         <h1>Word Prediction Game</h1>
-        <!-- <p id="level-text">Level: <span id="level">1</span></p>
-        <p id="challenge-text">Write this text in reverse:</p> -->
-        <!-- <input type="text" id="challenge" readonly> -->
          <div class = "magic_box">
         <img src="drawing.png" alt="magic box" id = "b">
         <img src="B.png" class ="hidden" alt="magic box" id = "B">
@@ -25,13 +22,25 @@
         <img src="drawing.png" alt="magic box" id = "t">
         <img src="T.png" class ="hidden" alt="magic box" id = "T">
         </div>
+        
         <div class="input-container">
             <label for="user-input">Prediction:</label>
             <input type="text" id="user-input">
         </div>
+
         <button id="submit-btn">Submit</button>
         <p id="message"></p>
         <button id="restart-btn" class="hidden">Reset The Game</button>
+
+        <div class="score-lives">
+            <p>Score: <span id="score">0</span></p>
+            <p>Lives: <span id="lives">
+                <img src="heart.png" alt="heart" class="heart" id = "heart1">
+                <img src="heart.png" alt="heart" class="heart" id = "heart2">
+                <img src="heart.png" alt="heart" class="heart" id = "heart3">
+            </span></p>
+        </div>
+
     </div>
     <script src="script.js"></script>
 
