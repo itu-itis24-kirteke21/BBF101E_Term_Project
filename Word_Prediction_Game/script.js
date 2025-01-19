@@ -55,35 +55,41 @@ submitBtn.addEventListener("click", () => {
         B_image.classList.remove("hidden")
         messageElement.textContent = "Nice guess!";
         messageElement.style.color ='green';
+        restartBtn.classList.remove("hidden");
         B_flag =1;
     }else if((Input_val == "L") && (L_flag == 0)) {
         L.classList.add("hidden");
         L_image.classList.remove("hidden")
         messageElement.textContent = "Nice guess!";
         messageElement.style.color ='green';
+        restartBtn.classList.remove("hidden");
         L_flag =1;
     }else if((Input_val == "A") && (A_flag == 0)) {
         A.classList.add("hidden");
         A_image.classList.remove("hidden")
         messageElement.textContent = "Nice guess!";
         messageElement.style.color ='green';
+        restartBtn.classList.remove("hidden");
         A_flag =1;
     }else if((Input_val == "S") && (S_flag == 0)) {
         S.classList.add("hidden");
         S_image.classList.remove("hidden")
         messageElement.textContent = "Nice guess!";
         messageElement.style.color ='green';
+        restartBtn.classList.remove("hidden");
         S_flag =1;
     }else if((Input_val == "T") && (T_flag == 0)) {
         T.classList.add("hidden");
         T_image.classList.remove("hidden")
         messageElement.textContent = "Nice guess!";
         messageElement.style.color ='green'
+        restartBtn.classList.remove("hidden");
         T_flag =1;
     }
      else {
         messageElement.textContent = "Incorrect! Try again.";
         messageElement.style.color ='red';
+        restartBtn.classList.remove("hidden");
     }
     let Total_flag = B_flag + L_flag + A_flag + S_flag + T_flag
     if(Total_flag ==5) {
